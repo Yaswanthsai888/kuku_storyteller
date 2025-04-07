@@ -1,0 +1,175 @@
+{
+  "title": "Shadows in the Mist",
+  "genre": "Thriller",
+  "start": "scene_1",
+  "scenes": {
+    "scene_1": {
+      "text": "The rain beats against your windshield as you drive down the isolated mountain road. Your GPS lost signal twenty minutes ago, and the storm is getting worse. Through the mist, you spot a dimly lit building—an old motel with a flickering 'Vacancy' sign. As you pull into the parking lot, you notice there are no other cars. The neon sign casts an eerie red glow across the wet pavement.",
+      "question": "What do you do?",
+      "choices": {
+        "Check in to the motel for the night": "scene_2_checkin",
+        "Keep driving despite the storm": "scene_2_drive",
+        "Call someone for directions first": "scene_2_call"
+      }
+    },
+    "scene_2_checkin": {
+      "text": "The lobby is eerily quiet except for the soft ticking of an antique clock. Behind the reception desk sits an elderly man with piercing eyes who doesn't seem surprised by your arrival. 'We've been expecting a guest,' he says, sliding a guest book toward you. As you sign, you notice all previous entries are dated exactly one year apart, on today's date. The man hands you a brass key with the number 13.",
+      "question": "How do you respond?",
+      "choices": {
+        "Ask about the guest book dates": "scene_3_guestbook",
+        "Request a different room": "scene_3_differentroom",
+        "Take the key and head to room 13": "scene_3_room13"
+      }
+    },
+    "scene_2_drive": {
+      "text": "You decide to continue driving. The rain intensifies, and visibility drops to near zero. Your headlights illuminate a figure standing in the middle of the road—a woman in a white dress, completely dry despite the downpour. You swerve to avoid her and skid off the road. When you look back, she's gone. Your car is stuck in mud, and your phone shows no signal.",
+      "question": "What's your next move?",
+      "choices": {
+        "Walk back to the motel": "scene_3_walkback",
+        "Stay in the car until morning": "scene_3_stayincar",
+        "Search for the woman": "scene_3_searchwoman"
+      }
+    },
+    "scene_2_call": {
+      "text": "You pull over and try to call for help, but there's no signal. As you're about to give up, your phone rings—unknown number. You answer hesitantly. 'Don't stay at the motel,' a frantic voice whispers. 'They're waiting for you.' The call cuts off. Looking back at the motel, you see several figures watching you from different windows, though you could swear the place looked empty moments ago.",
+      "question": "What do you do now?",
+      "choices": {
+        "Ignore the warning and check in anyway": "scene_3_ignorecall",
+        "Drive away immediately": "scene_3_escapefast",
+        "Investigate around the motel exterior": "scene_3_investigate"
+      }
+    },
+    "scene_3_guestbook": {
+      "text": "The old man's smile fades. 'Every year, someone comes. Every year, someone stays.' He leans forward. 'Some say this place exists between worlds, appearing only when someone needs to make a choice.' He taps the guest book. 'These people made theirs.' You notice a newspaper on the counter with today's date—but from last year. The headline reads: 'Local Resident Missing After Storm.'",
+      "question": "What do you do?",
+      "choices": {
+        "Leave immediately": "scene_4_flee",
+        "Ask who the missing person was": "scene_4_missing",
+        "Take the key and investigate room 13": "scene_4_investigate13"
+      }
+    },
+    "scene_3_differentroom": {
+      "text": "'Room 13 is the only vacant room,' the man insists, his tone suddenly cold. 'Unless...' he pauses, studying your face, 'you'd prefer to see the special accommodations in the basement?' Something about the way he says this sends chills down your spine. From somewhere below, you hear what sounds like scratching against wood.",
+      "question": "How do you proceed?",
+      "choices": {
+        "Reluctantly accept room 13": "scene_4_acceptroom",
+        "Demand to see the basement": "scene_4_basement",
+        "Make an excuse and try to leave": "scene_4_excuseleave"
+      }
+    },
+    "scene_3_room13": {
+      "text": "Room 13 is at the end of a long hallway. Inside, the room is surprisingly well-kept with vintage furnishings. On the bed lies a journal with your name embossed on the cover. Opening it reveals blank pages except for the first, which reads: 'Write your story. Make it a good one. It's the only way out.' The door behind you clicks shut and won't budge when you try the handle.",
+      "question": "What's your next action?",
+      "choices": {
+        "Write in the journal": "scene_4_writejournal",
+        "Search the room for another exit": "scene_4_searchroom",
+        "Break the window to escape": "scene_4_breakwindow"
+      }
+    },
+    "scene_3_walkback": {
+      "text": "You trudge through the rain back toward the motel. Halfway there, you spot a trail leading into the woods, marked by strange symbols carved into the trees. A faint light glimmers deep among the trees. Looking back at the motel, you see the vacancy sign has changed to 'No Escape.' Your instincts scream that something is very wrong with this place.",
+      "question": "Which path do you choose?",
+      "choices": {
+        "Continue to the motel despite the warning": "scene_4_ignoremotel",
+        "Follow the mysterious forest trail": "scene_4_foresttrail",
+        "Hide and observe the motel from a distance": "scene_4_observemotel"
+      }
+    },
+    "scene_3_stayincar": {
+      "text": "You lock the doors and recline your seat, deciding to wait until morning. You drift into an uneasy sleep, only to be awakened by tapping on your window. It's the woman in white, her pale face inches from the glass. 'Let me in,' she mouths, her breath fogging the window. 'They're coming.' Behind her, shadowy figures emerge from the mist, moving toward your car.",
+      "question": "What do you do?",
+      "choices": {
+        "Let the woman in": "scene_4_letwoman",
+        "Start the car and try to drive away": "scene_4_driveaway",
+        "Honk the horn to scare the figures away": "scene_4_honkhorn"
+      }
+    },
+    "scene_3_searchwoman": {
+      "text": "You follow the direction where you saw the woman. The rain suddenly stops, and an unnatural silence falls. You find a small cemetery hidden behind overgrown bushes. The newest gravestone bears today's date—next year—with your name on it. As you back away in shock, you bump into someone. It's the woman in white, now with a sad smile. 'You can still change it,' she whispers.",
+      "question": "How do you respond?",
+      "choices": {
+        "Ask how to change your fate": "scene_4_changefate",
+        "Run back to your car": "scene_4_runcar",
+        "Demand to know who she is": "scene_4_demandidentity"
+      }
+    },
+    "scene_3_ignorecall": {
+      "text": "You decide the call was a prank and head to the motel. The receptionist—a young woman with an unsettling smile—gives you room 13 without asking for ID or payment. 'It's already taken care of,' she says. In your room, you find a stack of journals, each written by different people who stayed in this room. The last entry in each one describes the same nightmare about being trapped in an endless loop.",
+      "question": "What's your next move?",
+      "choices": {
+        "Read more of the journals": "scene_4_readjournals",
+        "Confront the receptionist": "scene_4_confrontreceptionist",
+        "Try to leave the motel": "scene_4_leavemotel"
+      }
+    },
+    "scene_3_escapefast": {
+      "text": "You speed away from the motel, heart pounding. The road seems to loop back on itself—you keep passing the same landmarks. After your third time seeing the same twisted tree, you spot a dirt road you hadn't noticed before. As you turn onto it, your radio turns on by itself, playing a news report about a driver who disappeared on this mountain one year ago today.",
+      "question": "What do you do now?",
+      "choices": {
+        "Follow the dirt road": "scene_4_dirtroad",
+        "Turn back to the main road": "scene_4_mainroad",
+        "Stop and destroy your radio": "scene_4_destroyradio"
+      }
+    },
+    "scene_3_investigate": {
+      "text": "You circle the motel cautiously. Behind it, you discover an old well with strange markings. Nearby, a shed door hangs open, revealing walls covered with photos of previous motel guests, their faces scratched out. In the center is a map of the mountain with locations marked in red. One mark is where you swerved earlier, another is at the motel, and a third is deeper in the mountains.",
+      "question": "What's your next action?",
+      "choices": {
+        "Examine the well more closely": "scene_4_examinewell",
+        "Look through the photos in the shed": "scene_4_examinephotos",
+        "Follow the map to the third location": "scene_4_followmap"
+      }
+    },
+    "scene_4_flee": {
+      "text": "You rush out to your car, but it won't start. The old man watches from the doorway, shaking his head. 'No one leaves until they've stayed,' he says. As night deepens, lights appear in the forest, moving toward the motel. The old man retreats inside, locking the door. You're alone in the parking lot as the lights draw closer, revealing figures carrying lanterns, their faces hidden beneath hoods.",
+      "question": "What do you do?",
+      "choices": {
+        "Hide in the woods": "scene_5_hidewoods",
+        "Confront the approaching figures": "scene_5_confrontfigures",
+        "Break back into the motel": "scene_5_breakin"
+      }
+    },
+    "scene_4_missing": {
+      "text": "The old man's eyes widen. 'You don't recognize your own story?' He shows you the newspaper photo—it's you, listed as missing. 'Time works differently here. You've been driving this road for a year, caught in the loop.' He hands you a key. 'Room 13 holds your memories. Without them, you'll keep reliving this night forever.'",
+      "question": "What do you do?",
+      "choices": {
+        "Take the key and go to room 13": "scene_5_takememories",
+        "Refuse to believe him and leave": "scene_5_refusebelieve",
+        "Ask how to break the loop": "scene_5_breakloop"
+      }
+    },
+    "scene_4_investigate13": {
+      "text": "Room 13 contains a single bed, a desk, and a mirror. On the desk lies a journal with your handwriting, describing everything that's happened to you today—including this moment. The final page contains a warning: 'Don't look in the mirror after midnight.' The clock on the wall reads 11:58 PM.",
+      "question": "What's your next move?",
+      "choices": {
+        "Look in the mirror now": "scene_5_lookmirror",
+        "Wait until after midnight": "scene_5_waitmidnight",
+        "Leave the room immediately": "scene_5_leaveroom"
+      }
+    },
+    "scene_5_hidewoods": {
+      "text": "You dash into the woods, hiding behind a large tree. The hooded figures surround the motel, chanting in an unknown language. The building begins to shimmer and fade, revealing its true form—a decrepit ruin that hasn't been inhabited for decades. One figure turns toward your hiding spot, lowering their hood. It's you, but older, with haunted eyes. 'Find the journal,' your other self whispers. 'Break the cycle.' The figures vanish with the morning light, leaving you alone with a key in your hand—the key to your future.",
+      "question": "THE END"
+    },
+    "scene_5_confrontfigures": {
+      "text": "You stand your ground as the figures approach. They form a circle around you, lowering their hoods to reveal familiar faces—all are you, at different ages, with different expressions of fear, hope, and resignation. 'Every year we gather,' says the oldest version of you. 'Every year we hope you'll make a different choice.' They offer you a journal and a pen. 'Write a new ending. Free us all.' As dawn breaks, you write the final page of your story, and the cycle that has claimed so many versions of you finally breaks. You wake up in your car, the storm passed, with a single journal page as proof of your journey.",
+      "question": "THE END"
+    },
+    "scene_5_breakin": {
+      "text": "You break a window and climb back into the motel. The interior has transformed—endless hallways that shouldn't fit within the building's dimensions. Following the sound of ticking, you find yourself back in the lobby where time has frozen. The guest book lies open, your signature glowing. You cross it out and write a new name—the old man's. The building shudders. The old man appears, his form flickering. 'Clever,' he whispers as he fades away. 'My turn to wander.' Morning comes, and you drive away from the empty lot where the motel once stood, free from the cycle that trapped the caretaker for centuries.",
+      "question": "THE END"
+    },
+    "scene_5_takememories": {
+      "text": "In room 13, you find not a bedroom but a replica of your childhood home. Photos on the wall show your life's journey. As you touch each one, memories flood back—including how you first came to this road, running from a mistake you couldn't face. The old man appears. 'Now you remember why you're trapped. Some loops are of our own making.' You finally confront the truth you've been avoiding. As you accept responsibility for your past, the walls dissolve. You wake up in your car at a crossroads, the motel nowhere to be seen. Your GPS works again, showing two paths: one leading home, one leading away. This time, you choose to return and face what you left behind.",
+      "question": "THE END"
+    },
+    "scene_5_refusebelieve": {
+      "text": "You refuse to accept the old man's story and storm out. The night stretches endlessly as you drive in circles, always returning to the motel. Days pass, then weeks, as you stubbornly resist the truth. Finally, exhausted, you return to room 13 and find yourself—another version who made the same choices. Together, you piece together the fragments of your shared past. Understanding dawns: you're not trapped by the motel but by your own unresolved guilt. When you finally forgive yourself, the road ahead straightens, leading you back to the life you abandoned. The motel remains behind, waiting for the next traveler who needs to face their truth.",
+      "question": "THE END"
+    },
+    "scene_5_breakloop": {
+      "text": "The old man reveals that the motel exists to help lost souls face their regrets. 'You created this loop when you couldn't face your past,' he explains. He guides you to a room filled with doors, each representing a pivotal moment in your life. 'Choose one. Return to that moment. Make a different choice.' You select the door that leads to your greatest regret. Stepping through, you're given a chance to right your wrong. When you finally make peace with your past, the motel fades away. You awaken on the roadside, your car intact, with a strange key in your pocket—a reminder of the journey through your own psyche and the second chance you've been given.",
+      "question": "THE END"
+    }
+  }
+}

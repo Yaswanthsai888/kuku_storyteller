@@ -1,0 +1,119 @@
+/* Additional CSS for improved UI and interactions */
+
+/* Enhanced button container for better spacing */
+.choice-container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Improved button styling for better visibility and interaction */
+  .stButton > button {
+    background-color: rgba(75, 75, 75, 0.2) !important;
+    color: inherit !important;
+    padding: 15px 20px !important;
+    border-radius: 12px !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    backdrop-filter: blur(10px) !important;
+    margin: 8px 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    min-height: 60px !important;
+    text-align: center !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+  }
+  
+  .stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  .stButton > button:active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+  }
+  
+  /* Button ripple effect */
+  .stButton > button::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 5px !important;
+    height: 5px !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    opacity: 0 !important;
+    border-radius: 100% !important;
+    transform: scale(1, 1) translate(-50%) !important;
+    transform-origin: 50% 50% !important;
+  }
+  
+  .stButton > button:focus:not(:active)::after {
+    animation: ripple 1s ease-out !important;
+  }
+  
+  /* Responsive adjustments for mobile devices */
+  @media (max-width: 768px) {
+    .stButton > button {
+      padding: 12px 15px !important;
+      font-size: 14px !important;
+      min-height: 50px !important;
+    }
+    
+    .story-text {
+      font-size: 16px !important;
+      padding: 15px !important;
+    }
+  }
+  
+  /* Fix for API key input field */
+  .api-key-input .stTextInput > div > div > input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: inherit !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Improved story text container */
+  .story-text {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    padding: 25px !important;
+    border-radius: 12px !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    margin-bottom: 25px !important;
+    backdrop-filter: blur(8px) !important;
+    border-left: 4px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Question box styling */
+  .question-box {
+    margin: 20px 0 30px 0 !important;
+    padding: 15px 20px !important;
+    border-radius: 10px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-left: 4px solid rgba(255, 255, 255, 0.3) !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Fix for sidebar toggle button */
+  .st-emotion-cache-1r6slb0 {
+    z-index: 999 !important;
+  }
+  
+  /* Fix for notification box */
+  .notification-box {
+    margin: 15px 0 !important;
+    padding: 15px !important;
+    border-radius: 10px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(8px) !important;
+  }
+  
